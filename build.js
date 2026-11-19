@@ -8,6 +8,7 @@ fs.mkdirSync(path.join(__dirname, 'dist'), { recursive: true });
 fs.writeFileSync(path.join(__dirname, 'dist', 'artifact.html'), frag);
 const full = `<!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="theme-color" content="#2352d8">
 <style>:root{color-scheme:light}html,body{margin:0}[hidden]{display:none!important}</style></head><body>
 ${frag}
